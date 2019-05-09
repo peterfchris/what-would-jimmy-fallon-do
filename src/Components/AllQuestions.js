@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import Question from './Question'
 
 // THIS IS DONE... I THINK...
 
@@ -19,10 +20,21 @@ class AllQuestions extends Component{
         })
     }
 
+    handleUpdateQuestion = (id, question, answer) => {
+        
+        axios.put(`/api/updateQuestion/${id}`, {question: question, answer: answer}).then(response => {
+            console.log(response)
+            this.setState({questions: response.data})
+        })
+    }
+
     render(){
-        const questions = this.state.questions.map((q) => {
+        const questions = this.state.questions.map((q, index) => {
             return(
-                <li key={q.id}><h3>{q.question}</h3><p>{q.answer}</p></li>
+                <Question key={index}
+                    question={q}
+                    updateQuestion={this.handleUpdateQuestion}
+                />
             )
         })
         return(
