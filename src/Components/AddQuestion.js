@@ -31,8 +31,8 @@ class AddQuestion extends Component{
             <div>
                 <h1>Ask Jimmy Anything</h1>
                 <form onSubmit={this.handleAddEvent}>
-                    <input //this tag isn't working
-                        placeholder="As long as it's PG rated..."
+                    <input
+                        placeholder="But keep it PG..."
                         name="question"
                         onChange={this.handleUpdateInput}/>
                     <button>Ask Away!</button>
