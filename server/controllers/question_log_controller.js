@@ -1,5 +1,5 @@
 let questions = [
-    {id: 1, question: 'What is the worst advice you\' ever been given?', answer: 'Don\'t wear an apron while cooking bacon.'},
+    {id: 1, question: 'What is the worst advice you\'ve ever been given?', answer: 'Don\'t wear an apron while cooking bacon.'},
     {id: 2, question: 'What\'s the best way to cook oatmeal?', answer: 'With a microwave. Stoves suck.'},
     {id: 3, question: 'What\'s your favorite bedtime story?', answer: 'The Monster at The End of This Book.'}
 ]
@@ -32,15 +32,12 @@ module.exports = {
     updateQuestion: (req, res) => {
         let {id} = req.params
         let {question, answer} = req.body
-        console.log(questions)
-
         for(let i = 0; i < questions.length; i++) {
             if (questions[i].id === +id) {
                 questions[i].question = question;
                 questions[i].answer = answer;
             }
         }
-        console.log(questions)
         res.status(200).send(questions)
     },
     deleteQuestion: (req, res) => {

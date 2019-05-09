@@ -29,7 +29,7 @@ class AddQuestion extends Component{
     render(){
         return(
             <div>
-                <h1>Asky Jimmy Anything</h1>
+                <h1>Ask Jimmy Anything</h1>
                 <form onSubmit={this.handleAddEvent}>
                     <input //this tag isn't working
                         placeholder="As long as it's PG rated..."
