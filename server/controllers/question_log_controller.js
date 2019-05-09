@@ -7,6 +7,23 @@ let questions = [
 module.exports = {
     getAllQuestions: (req, res) => {
         res.status(200).send(questions)
-    }
+    },
+    addQuestion: (req, res) => {
+        let id = questions[questions.length - 1].id + 1
+        const newQuestion = {
+            id: id,
+            question: req.body.question,
+            answer: req.body.answer
+        }
+        questions = [...questions, newQuestion]
+        res.status(200).send(newQuestion)
+    },
+    updateQuestion: (req, res) => {
 
+    },
+    deleteQuestion: (req, res) => {
+        const {id} = req.params
+        questions = questions.filter((questions) => questions.id !== +id)
+        res.status(200).send(questions)
+    }
 }
