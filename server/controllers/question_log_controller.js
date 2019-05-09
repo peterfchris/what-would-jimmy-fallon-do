@@ -19,7 +19,8 @@ module.exports = {
         res.status(200).send(newQuestion)
     },
     updateQuestion: (req, res) => {
-
+        let {questions} = req.params
+        
     },
     deleteQuestion: (req, res) => {
         const {id} = req.params
