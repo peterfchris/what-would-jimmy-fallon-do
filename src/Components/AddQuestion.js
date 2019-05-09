@@ -12,14 +12,14 @@ class AddQuestion extends Component{
 
     handleUpdateInput = (e) => {
         this.setState({
-            [e.target.name]: e.target.value //figure out what this line does
+            [e.target.question]: e.target.value //figure out what this line does
         })
     }
 
     handleAddEvent = (e) => {
         e.preventDefault()
         axios.post('/api/AddQuestion', {
-            name: this.state.question,
+            question: this.state.question,
             answer: this.state.answer
         })
     }
@@ -29,7 +29,7 @@ class AddQuestion extends Component{
             <div>
                 <h1>Asky Jimmy Anything</h1>
                 <form onSubmit={this.handleAddEvent}>
-                    <indput //this tag isn't working
+                    <input //this tag isn't working
                         placeholder="As long as it's PG rated..."
                         name="question"
                         onChange={this.handleUpdateInput}/>

@@ -3,6 +3,7 @@ let questions = [
     {id: 2, question: 'What\'s the best way to cook oatmeal?', answer: 'With a microwave. Stoves suck.'},
     {id: 3, question: 'What\'s your favorite bedtime story?', answer: 'The Monster at the End of This Book.'}
 ]
+let id = 0
 
 module.exports = {
     getAllQuestions: (req, res) => {
@@ -18,13 +19,19 @@ module.exports = {
         questions = [...questions, newQuestion]
         res.status(200).send(newQuestion)
     },
-    updateQuestion: (req, res) => {
-        let {questions} = req.params
-        
-    },
+    // updateQuestion: (req, res) => {
+    //     let {questions} = req.params
+        // FIGURE OUT HOW THIS WORKS 
+    // },
     deleteQuestion: (req, res) => {
-        const {id} = req.params
-        questions = questions.filter((questions) => questions.id !== +id)
-        res.status(200).send(questions)
+        let {id} = req.params
+        let index = questions.findIndex(question => question.id === parseInt(id))
+        if (index !== -1) books.splice(index, 1)
+        res.send(questions)
+        
+        // console.log(questions)
+        // const {id} = req.params
+        // questions = questions.filter((questions) => questions.id !== +id)
+        // res.status(200).send(questions)
     }
 }

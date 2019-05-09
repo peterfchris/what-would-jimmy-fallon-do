@@ -10,7 +10,7 @@ class AllQuestions extends Component{
     }
 
     componentDidMount(){
-        axios.get('/api/event').then((res) => {
+        axios.get('/api/questions').then((res) => {
             this.setState({
                 questions: res.data
             })
