@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 
-class AddQuestion extends Component {
+class AddQuestion extends Component{
     constructor(){
         super()
         this.state = {
@@ -29,10 +29,10 @@ class AddQuestion extends Component {
             <div>
                 <h1>Asky Jimmy Anything</h1>
                 <form onSubmit={this.handleAddEvent}>
-                    <indput
+                    <indput //this tag isn't working
                         placeholder="As long as it's PG rated..."
                         name="question"
-                        onChange={this.handleUpdateInput} />
+                        onChange={this.handleUpdateInput}/>
                     <button>Ask Away!</button>
                 </form>
             </div>
