@@ -41,7 +41,7 @@ class NewQuestion extends Component{
                         onChange={this.handleUpdateInput}/>
                     <button onClick={this.handleRandomAnswer}>Ask Jimmy Anything</button>
                 </form>
-                <h1>{this.state.answer}</h1>
+                <h3>{this.state.answer}</h3>
             </div>
         )
     }

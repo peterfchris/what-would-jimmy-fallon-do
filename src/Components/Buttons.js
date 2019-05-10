@@ -39,8 +39,8 @@ class Buttons extends Component {
 
     render() {
         return <li>
-            <h3>{this.props.question.question}</h3>
-            <p>{this.props.question.answer}</p>
+            <h2>{this.props.question.question}</h2>
+            <h3>{this.props.question.answer}</h3>
             {
                 this.state.edit ?
                     <div>

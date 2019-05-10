@@ -49,6 +49,7 @@ class QuestionsDisplay extends Component{
             <div>
                 <h1>Questions Jimmy Has Answered</h1>
                 <ul>
+                    
                     {questions}
                 </ul>
             </div>
