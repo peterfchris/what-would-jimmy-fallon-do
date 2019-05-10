@@ -1,3 +1,7 @@
+
+
+
+
 let questions = [
     {id: 1, question: 'What is the worst advice you\'ve ever been given?', answer: 'Don\'t wear an apron while cooking bacon.'},
     {id: 2, question: 'What\'s the best way to cook oatmeal?', answer: 'With a microwave. Stoves suck.'},
@@ -12,7 +16,9 @@ const randomAnswers = [
     {id: 5, a: 'When in doubt, annoy your mentors.'},
     {id: 6, a: 'Maybe'},
     {id: 7, a: 'I wouldn\'t say no.'},
-    {id: 8, a: 'If you have to'}
+    {id: 8, a: 'If you have to'},
+    {id: 9, a: 'Fake News'},
+    {id: 10, a: `https://giphy.com/embed/gMDKyrWInxOhO`}
 ]
 
 module.exports = {

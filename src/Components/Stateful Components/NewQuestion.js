@@ -6,7 +6,8 @@ class NewQuestion extends Component{
         super()
         this.state = {
             question: '',
-            answer: null  
+            answers: null,  
+            id: null
         }
     }
 
@@ -26,7 +27,10 @@ class NewQuestion extends Component{
 
     handleRandomAnswer = () => {
         axios.get('/api/random').then((res) => {
-            this.setState({answer: res.data.a})
+            this.setState({
+                answer: res.data.a,
+                id: res.data.id
+            })
         })
     }
 
@@ -36,7 +40,7 @@ class NewQuestion extends Component{
                 <header>
                 <nav></nav>
                     <h1>What Would Jimmy Fallon Do?</h1>
-                    <iframe src="https://giphy.com/embed/l3q2tkUqM3SangJj2" width="960" height="476" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>  
+                    <iframe  src="https://giphy.com/embed/l3q2tkUqM3SangJj2" width="960" height="476" frameBorder="0" allowFullScreen></iframe>  
                 </header>
                 <form onSubmit={this.handleAddEvent}>
                     <input
@@ -45,7 +49,12 @@ class NewQuestion extends Component{
                         onChange={this.handleUpdateInput}/>
                     <button className="AJA" onClick={this.handleRandomAnswer}>Ask Jimmy Anything</button>
                 </form>
-                <h3 className="random">{this.state.answer}</h3>
+                    {
+                    this.state.id === 10 ? <iframe src={this.state.answer} className="Ew" width="480" height="236" frameBorder="0" allowFullScreen></iframe>
+                    :
+                    <h3 className="random">{this.state.answer}</h3>
+                    
+                    }
             </div>
         )
     }
