@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import NewQuestion from './Components/NewQuestion'
-import QuestionsDisplay from './Components/QuestionsDisplay'
+import NewQuestion from './Components/Stateful Components/NewQuestion'
+import QuestionsDisplay from './Components/Stateful Components/QuestionsDisplay'
 
 
 function App() {
