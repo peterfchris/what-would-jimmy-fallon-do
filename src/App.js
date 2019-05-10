@@ -6,7 +6,7 @@ import QuestionsDisplay from './Components/Stateful Components/QuestionsDisplay'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NewQuestion />
       <QuestionsDisplay />      
     </div>

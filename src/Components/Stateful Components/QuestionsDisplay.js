@@ -26,7 +26,9 @@ class QuestionsDisplay extends Component{
         })
     }
 
-    
+    handleAddQuestion = (newQ) => {
+        this.setState({questions:[...this.state.questions, newQ]})
+    }
 
     handleDeleteQuestion = (data) => {
         this.setState({
@@ -49,7 +51,6 @@ class QuestionsDisplay extends Component{
             <div>
                 <h1>Questions Jimmy Has Answered</h1>
                 <ul>
-                    
                     {questions}
                 </ul>
             </div>

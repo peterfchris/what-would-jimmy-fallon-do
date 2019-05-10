@@ -7,9 +7,80 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
+  background: #D6D9DF;
 }
 
 a {
   color: #333;
   text-decoration: none;
 }
+
+h1 {
+  color: #003054;
+}
+
+h2 {
+  color: #0068AB;
+}
+
+h3 {
+  color: #0068AB;
+}
+
+/* Buttons Component */
+
+button {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: #003054;
+  padding: 7px 15px 7px 15px;
+  text-decoration: none;
+}
+
+button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+input {
+  height: 8vh;
+  width: 40vw;
+}
+
+li {
+
+}
+
+.JFQ {
+
+}
+
+.JFQ-2 {
+
+}
+
+/* NewQuestion Component */
+
+.AJA {
+  -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #003054;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.AJA:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+
+/* QuestionsDisplay Component */

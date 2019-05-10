@@ -5,7 +5,7 @@ let questions = [
 ]
 
 const randomAnswers = [
-    {id: 1, a: 'I like to settle these sorts of issues with a good old fashioned game of catchphrase'},
+    {id: 1, a: 'Just play a game of catchphrase'},
     {id: 2, a: 'Never eat mayonaise.  It\'s disgusting.'},
     {id: 3, a: 'Yes'},
     {id: 4, a: 'No, that\'s a bad idea.'},
@@ -49,10 +49,5 @@ module.exports = {
         let index = questions.findIndex(question => question.id === parseInt(id))
         if (index !== -1) questions.splice(index, 1)
         res.send(questions)
-        
-        // console.log(questions)
-        // const {id} = req.params
-        // questions = questions.filter((questions) => questions.id !== +id)
-        // res.status(200).send(questions)
     }
 }

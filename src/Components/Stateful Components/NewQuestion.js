@@ -33,15 +33,22 @@ class NewQuestion extends Component{
     render(){
         return(
             <div>
-                <h1>What Would Jimmy Fallon Do?</h1>
+                <header>
+                    <h1>What Would Jimmy Fallon Do?</h1>
+                    <iframe src="https://giphy.com/embed/l3q2tkUqM3SangJj2" width="480" height="238" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                    
+                </header>
                 <form onSubmit={this.handleAddEvent}>
                     <input
                         placeholder="But keep it PG..."
                         name="question"
                         onChange={this.handleUpdateInput}/>
-                    <button onClick={this.handleRandomAnswer}>Ask Jimmy Anything</button>
+                    <button className="AJA" onClick={this.handleRandomAnswer}>Ask Jimmy Anything</button>
                 </form>
                 <h3>{this.state.answer}</h3>
+                <footer>
+
+                </footer>
             </div>
         )
     }
