@@ -1,7 +1,3 @@
-
-
-
-
 let questions = [
     {id: 1, question: 'What is the worst advice you\'ve ever been given?', answer: 'If you see a shark, swim towards it to establish dominance.'},
     {id: 2, question: 'How do you cook oatmeal?', answer: 'With a microwave. If you need to ask, you should not be using a stove.'},
