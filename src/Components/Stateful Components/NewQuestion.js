@@ -33,8 +33,8 @@ class NewQuestion extends Component{
     render(){
         return(
             <div>
-                <nav></nav>
                 <header>
+                <nav></nav>
                     <h1>What Would Jimmy Fallon Do?</h1>
                     <iframe src="https://giphy.com/embed/l3q2tkUqM3SangJj2" width="960" height="476" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>  
                 </header>

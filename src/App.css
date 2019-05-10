@@ -111,9 +111,11 @@ form {
 }
 
 nav {
-  height: 12vh;
+  height: 8vh;
   width: 100%;
   background: #003054;
+  position: absolute;
+  margin-top: -320px;
 }
 
 footer {
