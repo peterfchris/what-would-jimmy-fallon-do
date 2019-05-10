@@ -29,6 +29,12 @@ class Question extends Component {
         this.handleToggleEdit()
     }
 
+    // handleDeleteQuestion = () => {
+    //     this.setState({
+    //         questions: data
+    //     })
+    // }
+
     render() {
         return <li>
             <h1>{this.props.question.question}</h1>
@@ -43,6 +49,7 @@ class Question extends Component {
                     :
                     <button onClick={this.handleToggleEdit}>Edit</button>
             }
+            <button onClick={this.handleDeleteQuestion}>Delete</button>
         </li>
     }
 }

@@ -34,6 +34,7 @@ class AllQuestions extends Component{
                 <Question key={index}
                     question={q}
                     updateQuestion={this.handleUpdateQuestion}
+                    deleteQuestion={this.handleDeleteQuestion}
                 />
             )
         })

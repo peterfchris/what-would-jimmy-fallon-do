@@ -19,6 +19,10 @@ module.exports = {
     getAllQuestions: (req, res) => {
         res.status(200).send(questions)
     },
+    getRandomAnswer: (req, res) => {
+        let random = Math.floor(Math.random()*(randomAnswers.length)) 
+            res.status(200).send(randomAnswers[random])
+    },
     addQuestion: (req, res) => {
         let id = questions[questions.length - 1].id + 1
         const newQuestion = {
@@ -43,7 +47,7 @@ module.exports = {
     deleteQuestion: (req, res) => {
         let {id} = req.params
         let index = questions.findIndex(question => question.id === parseInt(id))
-        if (index !== -1) books.splice(index, 1)
+        if (index !== -1) questions.splice(index, 1)
         res.send(questions)
         
         // console.log(questions)

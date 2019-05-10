@@ -6,6 +6,7 @@ const app = express()
 app.use(express.json())
 
 app.get('/api/questions', qstn_ctrl.getAllQuestions)
+app.get('/api/random', qstn_ctrl.getRandomAnswer)
 app.post('/api/addQuestion', qstn_ctrl.addQuestion)
 app.put('/api/updateQuestion/:id', qstn_ctrl.updateQuestion)
 app.delete('/api/deleteQuestion/:id', qstn_ctrl.deleteQuestion)
