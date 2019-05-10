@@ -1,16 +1,14 @@
 import React from 'react';
 import './App.css';
-import AddQuestion from './Components/AddQuestion'
-import AllQuestions from './Components/AllQuestions'
-import DeleteQuestion from './Components/DeleteQuestion'
+import NewQuestion from './Components/NewQuestion'
+import QuestionsDisplay from './Components/QuestionsDisplay'
 
 
 function App() {
   return (
     <div className="App">
-      <AddQuestion />
-      <AllQuestions />
-      <DeleteQuestion />
+      <NewQuestion />
+      <QuestionsDisplay />      
     </div>
   );
 }

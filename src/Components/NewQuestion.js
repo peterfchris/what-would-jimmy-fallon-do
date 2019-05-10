@@ -1,20 +1,18 @@
 import React, {Component} from 'react'
 import axios from 'axios'
 
-// THIS DOESN'T WORK YET
-
-class AddQuestion extends Component{
+class NewQuestion extends Component{
     constructor(){
         super()
         this.state = {
             question: '',
-            answer: null  //remember to come back and fix this, it should be randomly generated
+            answer: null  
         }
     }
 
     handleUpdateInput = (e) => {
         this.setState({
-            [e.target.question]: e.target.value //figure out what this line does
+            [e.target.question]: e.target.value 
         })
     }
 
@@ -26,20 +24,27 @@ class AddQuestion extends Component{
         })
     }
 
+    handleRandomAnswer = () => {
+        axios.get('/api/random').then((res) => {
+            this.setState({answer: res.data.a})
+        })
+    }
+
     render(){
         return(
             <div>
-                <h1>Ask Jimmy Anything</h1>
+                <h1>What Would Jimmy Fallon Do?</h1>
                 <form onSubmit={this.handleAddEvent}>
                     <input
                         placeholder="But keep it PG..."
                         name="question"
                         onChange={this.handleUpdateInput}/>
-                    <button>Ask Away!</button>
+                    <button onClick={this.handleRandomAnswer}>Ask Jimmy Anything</button>
                 </form>
+                <h1>{this.state.answer}</h1>
             </div>
         )
     }
 }
 
-export default AddQuestion
+export default NewQuestion

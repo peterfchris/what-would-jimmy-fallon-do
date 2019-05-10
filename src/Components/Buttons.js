@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
+import axios from 'axios'
 
-class Question extends Component {
+class Buttons extends Component {
     constructor() {
         super()
         this.state = {
@@ -29,16 +30,17 @@ class Question extends Component {
         this.handleToggleEdit()
     }
 
-    // handleDeleteQuestion = () => {
-    //     this.setState({
-    //         questions: data
-    //     })
-    // }
+    handleDeleteQuestion = () => {
+        axios.delete(`/api/deleteQuestion/${this.props.question.id}`)
+        .then(res => {
+            this.props.deleteQuestion(res.data)
+        })
+    }
 
     render() {
         return <li>
-            <h1>{this.props.question.question}</h1>
-            <h2>{this.props.question.answer}</h2>
+            <h3>{this.props.question.question}</h3>
+            <p>{this.props.question.answer}</p>
             {
                 this.state.edit ?
                     <div>
@@ -54,4 +56,4 @@ class Question extends Component {
     }
 }
 
-export default Question
+export default Buttons
