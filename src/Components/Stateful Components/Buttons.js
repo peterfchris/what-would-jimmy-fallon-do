@@ -41,7 +41,7 @@ class Buttons extends Component {
         return <li>
             <h2 className="JFQ">{this.props.question.question}</h2>
             <h3 className="JFQ-2">{this.props.question.answer}</h3>
-            {
+            <div className="Edit">{
                 this.state.edit ?
                     <div>
                         <input type="text" name="question" onChange={this.handleChange}/>
@@ -51,7 +51,7 @@ class Buttons extends Component {
                     :
                     <button onClick={this.handleToggleEdit}>Edit</button>
             }
-            <button onClick={this.handleDeleteQuestion}>Delete</button>
+            <button onClick={this.handleDeleteQuestion}>Delete</button></div>
         </li>
     }
 }

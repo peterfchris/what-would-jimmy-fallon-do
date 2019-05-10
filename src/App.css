@@ -8,6 +8,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.4;
   background: #D6D9DF;
+  height: 1500px;
 }
 
 a {
@@ -15,12 +16,25 @@ a {
   text-decoration: none;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5vh 5vw;
+}
+
 h1 {
   color: #003054;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh auto;
+  font-size: 3rem;
 }
 
 h2 {
-  color: #0068AB;
+  color: #003054;
 }
 
 h3 {
@@ -39,6 +53,8 @@ button {
   background: #003054;
   padding: 7px 15px 7px 15px;
   text-decoration: none;
+  margin: 1vh auto;
+  padding: 1vh auto;
 }
 
 button:hover {
@@ -51,16 +67,27 @@ input {
   width: 40vw;
 }
 
-li {
-
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1vh;
+  border: none;
 }
 
 .JFQ {
-
+  margin: 1vh auto 1vh 28vw;
+  padding: 1vh auto;
 }
 
 .JFQ-2 {
+  margin: 1vh auto 1vh 30vw;
+  padding: 1vh auto;
+}
 
+.Edit {
+  margin-left: 28vw;
 }
 
 /* NewQuestion Component */
@@ -75,6 +102,7 @@ li {
   background: #003054;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  margin: 5px auto;
 }
 
 .AJA:hover {
@@ -82,5 +110,31 @@ li {
   text-decoration: none;
 }
 
+nav {
+  height: 12vh;
+  width: 100%;
+  background: #003054;
+}
+
+footer {
+  background: #003054;
+  position: relative;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-top: 200px;
+}
+
+.random {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+input {
+  font-size: 2rem;
+}
 
 /* QuestionsDisplay Component */
