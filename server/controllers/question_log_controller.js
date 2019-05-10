@@ -3,9 +3,9 @@
 
 
 let questions = [
-    {id: 1, question: 'What is the worst advice you\'ve ever been given?', answer: 'Don\'t wear an apron while cooking bacon.'},
-    {id: 2, question: 'What\'s the best way to cook oatmeal?', answer: 'With a microwave. Stoves suck.'},
-    {id: 3, question: 'What\'s your favorite bedtime story?', answer: 'The Monster at The End of This Book.'}
+    {id: 1, question: 'What is the worst advice you\'ve ever been given?', answer: 'If you see a shark, swim towards it to establish dominance.'},
+    {id: 2, question: 'How do you cook oatmeal?', answer: 'With a microwave. If you need to ask, you should not be using a stove.'},
+    {id: 3, question: 'What\'s your favorite song?', answer: 'Poop in a jar'}
 ]
 
 const randomAnswers = [

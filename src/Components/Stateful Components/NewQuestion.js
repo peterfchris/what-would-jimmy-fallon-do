@@ -32,6 +32,7 @@ class NewQuestion extends Component{
                 id: res.data.id
             })
         })
+
     }
 
     render(){
@@ -44,7 +45,7 @@ class NewQuestion extends Component{
                 </header>
                 <form onSubmit={this.handleAddEvent}>
                     <input
-                        placeholder="But keep it PG..."
+                        placeholder="Just keep it PG..."
                         name="question"
                         onChange={this.handleUpdateInput}/>
                     <button className="AJA" onClick={this.handleRandomAnswer}>Ask Jimmy Anything</button>
