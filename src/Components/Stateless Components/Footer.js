@@ -5,7 +5,7 @@ export class Stateless2 extends Component {
     return (
       <div>
         <footer>
-
+          <p className="footer">&copy; Peter Christensen 2019</p>
         </footer>
       </div>
     )

@@ -143,4 +143,12 @@ input {
   Margin: 3vh 0 0 31vw;
 }
 
-/* QuestionsDisplay Component */
+/* Footer Component */
+
+.footer {
+  color: #fff;
+  font-size: .8rem;
+  position: absolute;
+  margin: 15px 0 0 45vw;
+  
+}
