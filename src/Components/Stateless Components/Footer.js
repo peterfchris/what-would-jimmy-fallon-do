@@ -4,7 +4,9 @@ export class Stateless2 extends Component {
   render() {
     return (
       <div>
-        
+        <footer>
+
+        </footer>
       </div>
     )
   }

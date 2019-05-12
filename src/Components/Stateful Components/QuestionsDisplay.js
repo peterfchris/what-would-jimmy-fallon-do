@@ -53,9 +53,7 @@ class QuestionsDisplay extends Component{
                 <ul>
                     {questions}
                 </ul>
-                <footer>
-
-                </footer>
+                
             </div>
         )
     }
