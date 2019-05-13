@@ -12,16 +12,19 @@ class QuestionsDisplay extends Component{
     }
 
     componentDidMount(){
-        axios.get('/api/questions').then((res) => {
+        axios
+        .get('/api/questions')
+        .then((res) => {
             this.setState({
                 questions: res.data
             })
         })
     }
 
-    handleUpdateQuestion = (id, question, answer) => {
-        
-        axios.put(`/api/updateQuestion/${id}`, {question: question, answer: answer}).then(response => {
+    handleUpdateQuestion = (id, question, answer) => { 
+        axios
+        .put(`/api/updateQuestion/${id}`, {question, answer})
+        .then(response => {
             this.setState({questions: response.data})
         })
     }
