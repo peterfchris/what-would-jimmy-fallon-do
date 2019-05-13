@@ -36,7 +36,7 @@ class Buttons extends Component {
             this.props.deleteQuestion(res.data)
         })
         .catch(err => {
-            console.log(err)
+            console.error("Your button broke")
         })
     }
 

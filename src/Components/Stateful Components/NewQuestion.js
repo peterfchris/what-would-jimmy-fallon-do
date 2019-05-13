@@ -20,7 +20,8 @@ class NewQuestion extends Component{
 
     handleAddEvent = (e) => {
         e.preventDefault()
-        axios.post('/api/AddQuestion', {
+        axios
+        .post('/api/AddQuestion', {
             question: this.state.question,
             answer: this.state.answer
         })
@@ -38,7 +39,7 @@ class NewQuestion extends Component{
             console.log('It worked')
         })
         .catch((err) => {
-            console.log('It Failed')
+            console.error('It Failed')
         })
 
     }
