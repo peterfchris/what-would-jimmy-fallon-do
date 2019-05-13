@@ -1,7 +1,8 @@
 let questions = [
     {id: 1, question: 'What is the worst advice you\'ve ever been given?', answer: 'If you see a shark, swim towards it to establish dominance.'},
     {id: 2, question: 'How do you cook oatmeal?', answer: 'With a microwave. If you need to ask, you should not be using a stove.'},
-    {id: 3, question: 'What\'s your favorite song?', answer: 'Poop in a jar'}
+    {id: 3, question: 'What\'s your favorite song?', answer: 'Poop in a jar'},
+    {id: 4, question: 'Where\'s the best place to practice singing?', answer: 'The Shower. Obviously.'}
 ]
 
 const randomAnswers = [
