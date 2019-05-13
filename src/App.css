@@ -16,14 +16,6 @@ a {
   text-decoration: none;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 5vh 5vw;
-}
-
 h1 {
   color: #003054;
   display: flex;
@@ -39,6 +31,16 @@ h2 {
 
 h3 {
   color: #0068AB;
+}
+
+/* Header Component */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5vh 5vw;
 }
 
 /* Buttons Component */
@@ -118,16 +120,6 @@ nav {
   margin-top: -620px;
 }
 
-footer {
-  background: #003054;
-  position: relative;
-  height: 50px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-top: 200px;
-}
-
 .random {
   display: flex;
   justify-content: center;
@@ -151,4 +143,14 @@ input {
   position: absolute;
   margin: 15px 0 0 45vw;
   
+}
+
+footer {
+  background: #003054;
+  position: relative;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-top: 200px;
 }
