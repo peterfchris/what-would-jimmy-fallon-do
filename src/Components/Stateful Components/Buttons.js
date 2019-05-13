@@ -35,6 +35,9 @@ class Buttons extends Component {
         .then(res => {
             this.props.deleteQuestion(res.data)
         })
+        .catch(err => {
+            console.log(err)
+        })
     }
 
     render() {

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import { transformFromAst } from '@babel/core';
 
 class NewQuestion extends Component{
     constructor(){
@@ -26,11 +27,18 @@ class NewQuestion extends Component{
     }
 
     handleRandomAnswer = () => {
-        axios.get('/api/random').then((res) => {
+        axios
+        .get('/api/random').then((res) => {
             this.setState({
                 answer: res.data.a,
                 id: res.data.id
             })
+        })
+        .then((res) => {
+            console.log('It worked')
+        })
+        .catch((err) => {
+            console.log('It Failed')
         })
 
     }
